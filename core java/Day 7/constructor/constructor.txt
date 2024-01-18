@@ -1,0 +1,60 @@
+Constructors:-A constructor initializes an object immediately upon creation. It has the same name as the
+			  class in which it resides and is syntactically similar to a method. Once defined, the constructor
+              is automatically called immediately after the object is created, before the new operator completes.
+              Constructors look a little strange because they have no return type, not even void.
+			  A constructor is similar to a method that is used to initialize the instance variables. The sole purpose
+			  of a constructor is to initialize the instance variables.
+			  Constructor in java is a special type of method that is used to initialize the object.
+			  Java constructor is invoked at the time of object creation. It constructs the values i.e. provides data for 
+			  the object that is why it is known as constructor.
+
+Rules for creating java constructor:-There are basically two rules defined for the constructor.
+
+1. Constructor name must be same as its class name
+2. Constructor must have no explicit return type
+
+Person(){
+}//This is constructor of class type Person
+
+Types of java constructors:-There are two types of constructors:
+
+1. Default constructor (no-arg constructor)
+2. Parameterized constructor
+
+1. Default Constructor:-A constructor that have no parameter is known as default constructor.
+
+*A constructor is automatically called and executed at the time of creating an object. While
+creating an _object, if nothing is passed to, the object, the default constructor is called and
+executed.If-some values are passed to the object, then the parameterized constructor is called.
+
+2. parameterized constructor:-A constructor that have parameters is known as parameterized constructor.
+
+Why use parameterized constructor?:-Parameterized constructor is used to provide different values to the distinct objects.
+
+Constructor Overloading in Java:-Constructor overloading is a technique in Java in which a class can have any number of constructors
+			that differ in parameter lists.The compiler differentiates these constructors by taking into account the number of parameters
+			in the list and their type.
+			
+Using Objects as Parameters:-So far, we have only been using simple types as parameters to methods. However, it is both
+correct and common to pass objects to methods.
+
+Difference between constructor and method in java
+
+			Java Constructor								Java Method
+1.Constructor is used to initialize the state of an object.			Method is used to expose behaviour of an object.
+2.Constructor must not have return type.								Method must have return type.
+3.Constructor is invoked implicitly.									Method is invoked explicitly.
+4.The java compiler provides a default constructor if you don't		           Method is not provided by compiler in any case.
+ have any constructor.	
+5.Constructor name must be same as the class name.					Method name may or may not be same as class name.
+
+Java Copy Constructor:-There is no copy constructor in java. But, we can copy the values of one object to another like copy constructor in C++.
+					   There are many ways to copy the values of one object into another in java. They are:
+
+1. By constructor
+2. By assigning the values of one object into another
+3. By clone() method of Object class
+
+Copying values without constructor:-We can copy the values of one object into another by assigning the objects values to another object. In this case,
+					there is no need to create the constructor.
+
