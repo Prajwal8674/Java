@@ -1,0 +1,21 @@
+Q) What is the purpose of default constructor?:-Default constructor provides the default values to the object
+				like 0, null etc. depending on the type.
+
+Example of default constructor that displays the default values
+
+class Student3{  
+int id;  
+String name;  
+  
+void display(){System.out.println(id+" "+name);}  
+  
+public static void main(String args[]){  
+Student3 s1=new Student3();  
+Student3 s2=new Student3();  
+s1.display();  
+s2.display();  
+}  
+}  
+
+Can constructor perform other tasks instead of initialization?:-Yes, like object creation, starting a thread, calling method etc.
+				You can perform any operation in the constructor as you perform in the method.
