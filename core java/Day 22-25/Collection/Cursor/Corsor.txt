@@ -1,0 +1,56 @@
+Cursor:- If we want to get object one by one form the collection we should go for collection.Threre are following type of cursor..
+
+	1. Enumeration.
+	2. Iterator.
+	3. ListIterator.
+	
+	1. Enumeration:-It is a cousor to retrive object one by one form the collection.
+					It is applicable for lagacy classes.
+					we can create Enumerationny using element.
+					public Enumeration element();
+					
+					
+					Enumeration e = v.element();
+					
+		Enumeration interface define the following two method
+		1. public boolean hasMoreElement();
+		2. public Object nextElement();
+		
+		
+	Limition of Enumeration:-
+		
+	1. Enumeration concept is applicable only for lagacy classes & hace it is not a universal Cursor.
+	2. By Using Enumeration we can get only ReadAccess and we can't perform any remove operation.
+	3. To overcome these limition SUN people intoduced Iterator
+	
+	2. Iterator:-
+		1. we can apply Iterator concept for any collection object It is universal Cursor.
+		2. Whlie iteration we can perfom remove operation also intoduced red operation.
+		3. we can get iterator object by collection interface.
+		
+			Iterator i = c.iterator();
+			
+			Iterator Inteface defines the following 3 method.
+			
+			1. public boolean hasNext();
+			2. public object next();
+			3. public void remove();
+			
+	 3. List Interface:-List Interface is the subinterface of Collection.It contains methods to insert and delete elements in index basis.It is 
+		a factory of ListIterator interface.ListIterator Interface is used to traverse the element in backward and forward direction.Commonly used 
+		methods of List Interface:
+
+		1. public void add(int index,Object element);
+		2. public boolean addAll(int index,Collection c);
+		3. public object get(int Index position);
+		4. public object set(int index,Object element);
+		5. public object remove(int index);
+		6. public ListIterator listIterator();
+		7. public ListIterator listIterator(int i);
+		
+		Commonly used methods of ListIterator Interface:
+
+		public boolean hasNext();
+		public Object next();
+		public boolean hasPrevious();
+		public Object previous();
