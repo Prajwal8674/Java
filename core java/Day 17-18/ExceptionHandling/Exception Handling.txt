@@ -1,0 +1,50 @@
+Exception Handling:-The exception handling in java is one of the powerful mechanism to handle the runtime errors so that normal flow of the
+application can be maintained.
+
+examines Java’s exception-handling mechanism. An exception is an abnormal condition that arises in a code sequence at run time. In other words,
+an exception is a run-time error. In computer languages that do not support exception handling, errors must be checked and handled manually—typically
+through the use of error codes, and so on. This approach is as cumbersome as it is troublesome. Java’s exception handling avoids these problems and, in
+the process, brings run-time error management into the objectoriented world.
+
+What is exception:-Dictionary Meaning: Exception is an abnormal condition.
+In java, exception is an event that disrupts the normal flow of the program. It is an object which is thrown at runtime.
+
+What is exception handling:-Exception Handling is a mechanism to handle runtime errors such as ClassNotFound, IO, SQL, Remote etc.
+
+Advantage of Exception Handling:-The core advantage of exception handling is to maintain the normal flow of the application. 
+Exception normally disrupts the normal flow of the application that is why we use exception handling.
+
+Types of Exception:-There are mainly two types of exceptions: checked and unchecked where error is considered as unchecked exception.
+The sun microsystem says there are three types of exceptions:
+
+1. Checked Exception
+2. Unchecked Exception
+3. Error
+
+Compile-time errors: These are syntactical errors found in the code, due to which program fails to compile. For example, forgetting a semicolon at the end of
+a Java statement, or writing a statement without proper syntax will result in compile-lime error.
+The classes that extend Throwable class except RuntimeException and Error are known as checked exceptions e.g.IOException, SQLException etc. Checked exceptions
+are checked at compile-time.
+
+Run-time errors: These errors represent inefficiency of the computer system to execute particular statement. For example, insufficient memory to
+store something or inability microprocessor to execute some statement come under run-time errors.
+The classes that extend RuntimeException are known as unchecked exceptions e.g. ArithmeticException, NullPointerException, ArrayIndexOutOfBoundsException etc.
+Unchecked exceptions are not checked at compile-time rather they are checked at runtime.
+
+Error is irrecoverable e.g. OutOfMemoryError, VirtualMachineError, AssertionError etc.
+
+Common scenarios where exceptions may occur
+1) Scenario where ArithmeticException occurs:-int a=50/0;//ArithmeticException
+2) Scenario where NullPointerException occurs:-String s=null;  
+											   System.out.println(s.length());//NullPointerException 
+3) Scenario where NumberFormatException occurs:-String s="abc";  
+												int i=Integer.parseInt(s);//NumberFormatException
+4) Scenario where ArrayIndexOutOfBoundsException occurs:-int a[]=new int[5];  
+														 a[10]=50; //ArrayIndexOutOfBoundsException  
+
+Exception Handling Keywords:-
+try
+catch
+finally
+throw
+throws														 
