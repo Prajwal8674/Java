@@ -1,0 +1,22 @@
+LinkedHashSet:-contains unique elements only like HashSet. It extends HashSet class and implements Set interface.
+		LinkedHashSet maintains a linked list of the entries in the set, in the order in which they were inserted. This allows insertion-order iteration 
+		over the set.
+		That is, when cycling through a LinkedHashSet using an iterator, the elements will be returned in the order in which they were inserted.
+		The hash code is then used as the index at which the data associated with the key is stored. The transformation of the key into its hash code 
+		is performed automatically.
+		
+		1. The LinkedHashSet class supports four constructors. The first form constructs a default hash set:
+		
+		LinkedHashSet( )
+		
+		2. The following constructor form initializes the hash set by using the elements of c.
+		
+		LinkedHashSet(Collection c)
+		
+		3. The following constructor form initializes the capacity of the hash set to capacity.The capacity grows automatically as elements are added to the Hash.
+		
+		LinkedHashSet(int capacity)
+		
+		4. The fourth form initializes both the capacity and the fill ratio (also called load capacity) of the hash set from its arguments:
+		
+		LinkedHashSet(int capacity, float fillRatio)
