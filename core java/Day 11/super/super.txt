@@ -1,0 +1,31 @@
+super:-The Keyword 'super':-If we create an object to super class, we can access only the super class members, but not the
+class members. But if we create sub class object, all the members of both super and sub classes available to it.
+This is the reason, we always create an object to sub class in inheritance. times, the super class members and sub class members may have same names.
+In that case,default only sub class members are accessible.
+However, there will be times when you will want to create a superclass that keeps the details of its implementation to itself (that is,
+that keeps its data members private).In this case, there would be no way for a subclass to directly access or initialize these variables
+on its own. Since encapsulation is a primary attribute of OOP, it is not surprising that Java provides a solution to this problem. Whenever
+a subclass needs to refer to its immediate superclass, it can do so by use of the keyword super.
+super has two general forms. The first calls the superclass’ constructor. The second is used to access a member of the superclass that has
+ been hidden by a member of a subclass.
+ 
+The super keyword in java is a reference variable that is used to refer immediate parent class object.
+Whenever you create the instance of subclass, an instance of parent class is created implicitly i.e. referred by super reference variable.
+
+Usage of java super Keyword
+
+super is used to refer immediate parent class instance variable.
+super() is used to invoke immediate parent class constructor.
+super is used to invoke immediate parent class method.
+
+2) super is used to invoke parent class constructor.
+
+As we know well that default constructor is provided by compiler automatically but it also adds super() for the first statement.If you are creating your own
+constructor and you don't have either this() or super() as the first statement, compiler will provide super() as the first statement of the constructor.
+
+3) super can be used to invoke parent class method
+
+The super keyword can also be used to invoke parent class method. It should be used in case subclass contains the same method as parent class
+In the above example Student and Person both classes have message() method if we call message() method from Student class, it will call the message()
+method of Student class not of Person class because priority is given to local.In case there is no method in subclass as parent, there is no need to use super.
+ In the example given below message() method is invoked from Student class but Student class does not have message() method, so you can directly call message() method.
