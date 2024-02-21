@@ -1,0 +1,13 @@
+Dynamic Method Dispatch:-While the examples in the preceding section demonstrate the mechanics of method overriding,
+they do not show its power. Indeed, if there were nothing more to method overriding than a name space convention, then
+it would be, at best, an interesting curiosity, but of little realvalue. However, this is not the case. Method overriding forms
+the basis for one of Java’s most powerful concepts: dynamic method dispatch. Dynamic method dispatch is the mechanism
+by which a call to an overridden method is resolved at run time, rather than compile time.Dynamic method dispatch is important because
+this is how Java implements run-time polymorphism.
+Let’s begin by restating an important principle: a superclass reference variable can refer to a subclass object. Java uses this fact to
+resolve calls to overridden methods at run time. Here is how. When an overridden method is called through a superclass reference, Java determines
+which version of that method to execute based upon the type of the object being referred to at the time the call occurs. Thus, this determination
+is made at run time. When different types of objects are referred to, different versions of an overridden method will be called.
+In other words, it is the type of the object being referred to (not the type of the reference variable)that determines which version of an overridden
+method will be executed. Therefore, if a superclass contains a method that is overridden by a subclass, then when different types of objects are referred
+to through a superclass reference variable, different versions of the method are executed
