@@ -1,0 +1,3 @@
+What is Thread Synchronization:-when a thread is already acting on an object,prevention any other thread from acting onthe same object is called 
+	"Thread Syncoronization" or "Thread Safe" the object on which the thread are syncoronized is called synchronized object . Thread Synchronization is 
+	recommended when multipal thread are used on the same object.
