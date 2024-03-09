@@ -1,0 +1,32 @@
+Difference between final, finally and finalize
+
+final	
+1. Final is used to apply restrictions on class, method and variable. Final class can't be inherited,
+   final method can't be overridden and final variable value can't be changed.	
+2. Final is a keyword.
+
+finally
+1.Finally is used to place important code, it will be executed whether exception is handled or not.
+2.Finally is a block
+
+finalize
+1.Finalize is used to perform clean up processing just before object is garbage collected.
+2.Finalize is a method.
+
+ExceptionHandling with MethodOverriding:-
+If the superclass method does not declare an exception:- subclass overridden method cannot declare the checked exception but it can declare unchecked exception.
+
+If the superclass method declares an exception:-If the superclass method declares an exception, subclass overridden method can declare same, subclass exception
+	or no exception but cannot declare parent exception.
+	
+1) Rule: If the superclass method does not declare an exception, subclass overridden method cannot declare the checked exception.
+2) Rule: If the superclass method does not declare an exception, subclass overridden method cannot declare the checked exception but can declare unchecked exception.
+
+ Custom Exception:-If you are creating your own Exception that is known as custom exception or user-defined exception. Java custom exceptions are used to
+ customize the exception according to user need.By the help of custom exception, you can have your own exception and message.
+ 
+ class InvalidAgeException extends Exception{  
+ InvalidAgeException(String s){  
+  super(s);  
+ }  
+}  
