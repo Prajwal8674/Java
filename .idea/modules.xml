@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Abstraction/Abstraction.iml" filepath="$PROJECT_DIR$/Abstraction/Abstraction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Array/Array.iml" filepath="$PROJECT_DIR$/Array/Array.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Classes and object/Classes and object.iml" filepath="$PROJECT_DIR$/Classes and object/Classes and object.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day 1/Day 1.iml" filepath="$PROJECT_DIR$/Day 1/Day 1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Fahrenheit to celcius convert/Fahrenheit to celcius convert.iml" filepath="$PROJECT_DIR$/Fahrenheit to celcius convert/Fahrenheit to celcius convert.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hashcode/Fahrenheit to celcius convert/Fahrenheit to celcius convert2.iml" filepath="$PROJECT_DIR$/Hashcode/Fahrenheit to celcius convert/Fahrenheit to celcius convert2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hashcode/Hashcode.iml" filepath="$PROJECT_DIR$/Hashcode/Hashcode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/INVENTORY_MANAGEMENT_SYSTEM_PROJECT/INVENTORY_MANAGEMENT_SYSTEM_PROJECT.iml" filepath="$PROJECT_DIR$/INVENTORY_MANAGEMENT_SYSTEM_PROJECT/INVENTORY_MANAGEMENT_SYSTEM_PROJECT.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Inheritencee/Inheritencee.iml" filepath="$PROJECT_DIR$/Inheritencee/Inheritencee.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Interface/Interface.iml" filepath="$PROJECT_DIR$/Interface/Interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JAVA Programming - Repo.iml" filepath="$PROJECT_DIR$/JAVA Programming - Repo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LinkedList/LinkedList.iml" filepath="$PROJECT_DIR$/LinkedList/LinkedList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/addition integer between  0 to 100/addition integer between  0 to 100.iml" filepath="$PROJECT_DIR$/addition integer between  0 to 100/addition integer between  0 to 100.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Array/addition integer between  0 to 100/addition integer between  0 to 101.iml" filepath="$PROJECT_DIR$/Array/addition integer between  0 to 100/addition integer between  0 to 101.iml" />
+      <module fileurl="file://$PROJECT_DIR$/collection/collection.iml" filepath="$PROJECT_DIR$/collection/collection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/constructor/constructor.iml" filepath="$PROJECT_DIR$/constructor/constructor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/inches in meter/inches in meter.iml" filepath="$PROJECT_DIR$/inches in meter/inches in meter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/individual digit/individual digit.iml" filepath="$PROJECT_DIR$/individual digit/individual digit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mini project/mini project.iml" filepath="$PROJECT_DIR$/mini project/mini project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/multithreading1/multithreading1.iml" filepath="$PROJECT_DIR$/multithreading1/multithreading1.iml" />
+    </modules>
+  </component>
+</project>
