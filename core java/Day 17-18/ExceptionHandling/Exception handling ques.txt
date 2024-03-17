@@ -1,0 +1,9 @@
+What is Throwable?
+Throwable is a class that represents all errors and exceptions which may occur in Java.
+
+Which is the superclass for-all exceptions?
+Exception is the super class of-all exceptions in Java java.lang
+
+What is the difference between an exception and an error?
+An exception is an error which can be handled. It means when an exception. happens, programmer can do something to avoid any harm. But an error
+is an error which cannot- be handled happens and the programmer cannot do any thing.
