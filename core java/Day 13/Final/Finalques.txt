@@ -1,0 +1,9 @@
+Q) What is blank or uninitialized final variable?
+
+A final variable that is not initialized at the time of declaration is known as blank final variable.
+If you want to create a variable that is initialized at the time of creating object and once initialized may not be changed,
+it is useful. For example PAN CARD number of an employee.It can be initialized only in constructor.
+
+Q) What is final parameter?
+
+If you declare any parameter as final, you cannot change the value of it.
