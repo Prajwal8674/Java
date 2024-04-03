@@ -1,0 +1,7 @@
+Factory Method:-Factory methods are' static methods only. "But their intension is to create an object depending on
+the user choice.Precisely, a factory method is a method that returns an object to the class, to which it belongs. For example,
+getNurilberlnstance () is a factory method. Why? Because it belongs to NumberFormat class and returns an object to NurilberFormat class.
+
+What are factory methods?
+A factory method is a method that creates and returns an object to the ciass to which it belongs. A single factory method replaces several
+constructors in the class by accepting different options from the user, while creating the -object.
