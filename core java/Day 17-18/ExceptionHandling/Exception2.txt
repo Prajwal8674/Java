@@ -1,0 +1,44 @@
+Exception propagation:-An exception is first thrown from the top of the stack and if it is not caught, it drops down the call stack to the previous method,
+	If not caught there, the exception again drops down to the previous method, and so on until they are caught or until they reach the very bottom of the
+	call stack.This is called exception propagation.
+	
+	In the above example exception occurs in m() method where it is not handled,so it is propagated to previous n() method where it is not handled,
+	again it is propagated to p() method where exception is handled.
+	Exception can be handled in any method in call stack either in main() method,p() method,n() method or m() method.
+	Rule: By default, Checked Exceptions are not forwarded in calling chain (propagated).
+	
+ throws keyword:-The Java throws keyword is used to declare an exception. It gives an information to the programmer that there may occur an exception so it 
+	is better for the programmer to provide the exception handling code so that normal flow can be maintained.Exception Handling is mainly used to handle the
+	checked exceptions. If there occurs any unchecked exception such as NullPointerException, it is programmers fault that he is not performing check up before
+	the code being used.
+	
+	return_type method_name() throws exception_class_name{  
+    //method code  
+    }
+	Which exception should be declared :-checked exception only	
+	Rule: If you are calling a method that declares an exception, you must either caught or declare the exception.
+	
+	Case1:You caught the exception i.e. handle the exception using try/catch.
+	Case2:You declare the exception i.e. specifying throws with the method.
+	
+Difference between throw and throws:-
+
+No.	throw																			throws
+1)	Java throw keyword is used to explicitly throw an exception.			Java throws keyword is used to declare an exception.
+2)	Checked exception cannot be propagated using throw only.				Checked exception can be propagated with throws.
+3)	Throw is followed by an instance.										Throws is followed by class.
+4)	Throw is used within the method.										Throws is used with the method signature.
+5)	You cannot throw multiple exceptions.									You can declare multiple exceptions e.g.
+																			public void method()throws IOException,SQLException.
+																		
+void m(){  
+throw new ArithmeticException("sorry");  
+}  
+
+void m()throws ArithmeticException{  
+//method code  
+}  
+
+void m()throws ArithmeticException{  
+throw new ArithmeticException("sorry");  
+}   
