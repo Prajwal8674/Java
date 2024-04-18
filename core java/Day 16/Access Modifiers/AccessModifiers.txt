@@ -1,0 +1,32 @@
+Access Modifiers:-We have seen that any class and its members within a package should be declared as public.The only the class and its members will
+be available for use outside the package. Let us discuss exact what difference is there among various access specifiers in Java.
+There are two types of modifiers in java: access modifiers and non-access modifiers.The access modifiers in java specifies accessibility (scope) of a 
+data member, method, constructor or class.
+
+There are 4 types of java access modifiers:
+
+private
+default
+protected
+public
+
+There are many non-access modifiers such as static, abstract, synchronized, native, volatile, transient etc.
+
+1) private access modifier:-The private access modifier is accessible only within class.
+2) default access modifier:-If you don't use any modifier, it is treated as default bydefault. The default modifier is accessible only within package.
+3) protected access modifier:-The protected access modifier is accessible within package and outside the package but through inheritance only.
+The protected access modifier can be applied on the data member, method and constructor. It can't be applied on the class.
+4) public access modifier:-The public access modifier is accessible everywhere. It has the widest scope among all other modifiers.
+
+Access Modifier	    within class    within package	 outside package by subclass only	outside package
+Private	                    Y	          N	                    N	                         N
+Default	                    Y	          Y	                    N	                         N
+Protected	            Y	          Y	                    Y	                         N
+Public	                    Y	          Y	                    Y	                         Y
+
+
+Encapulcation:-Encapsulation in java is a process of wrapping code and data together into a single unit, for example capsule i.e. mixed of several medicines.
+We can create a fully encapsulated class in java by making all the data members of the class private. Now we can use setter and getter methods to set and get
+the data in it.The Java Bean class is the example of fully encapsulated class.
+
+Advantage of Encapsulation in java:-By providing only setter or getter method, you can make the class read-only or write-only.
