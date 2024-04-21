@@ -1,0 +1,50 @@
+The Hashtable:-A Hashtable is an array of list.Each list is known as a bucket.The position of bucket is identified by calling the hashcode() method.
+		A Hashtable contains values based on the key. It implements the Map interface and extends Dictionary class.
+				It contains only unique elements.
+				It may have not have any null key or value.
+				It is synchronized.
+				
+	Hashtable was part of the original java.util and is a concrete implementation of a Dictionary.
+
+	However, Java 2 reengineered Hashtable so that it also implements the Map interface. Thus, Hashtable is now integrated into the collections framework.
+	It is similar to HashMap, but is synchronized.
+
+	Like HashMap, Hashtable stores key/value pairs in a hash table. When using a Hashtable, you specify an object that is used as a key, and the value
+	that you want linked to that key. The key is then hashed, and the resulting hash code is used as the index at which the value is stored within the table.
+
+	1. The Hashtable defines four constructors. The first version is the default constructor:
+
+	Hashtable( )
+
+	2. The second version creates a hash table that has an initial size specified by size:
+
+	Hashtable(int size)
+
+	3. The third version creates a hash table that has an initial size specified by size and a fill ratio specified by fillRatio.This ratio must be
+	between 0.0 and 1.0, and it determines how full the hash table can be before it is resized upward.
+
+	Hashtable(int size, float fillRatio)
+	
+	4. The fourth version creates a hash table that is initialized with the elements in m.
+
+	The capacity of the hash table is set to twice the number of elements in m. The default load factor of 0.75 is used.
+
+	Hashtable(Map m)
+
+	Apart from the methods defined by Map interface, Hashtable defines following methods:
+
+
+	1	void clear( )Resets and empties the hash table.
+	2	Object clone( )Returns a duplicate of the invoking object.
+	3	boolean contains(Object value)Returns true if some value equal to value exists within the hash table. Returns false if the value isn't found.
+	4	boolean containsKey(Object key)Returns true if some key equal to key exists within the hash table. Returns false if the key isn't found.
+	5	boolean containsValue(Object value)Returns true if some value equal to value exists within the hash table. Returns false if the value isn't found.
+	6	Enumeration elements( )Returns an enumeration of the values contained in the hash table.
+	7	Object get(Object key)Returns the object that contains the value associated with key. If key is not in the hash table, a null object is returned.
+	8	boolean isEmpty( )Returns true if the hash table is empty; returns false if it contains at least one key.
+	9	Enumeration keys( )Returns an enumeration of the keys contained in the hash table.
+	10	Object put(Object key, Object value)Inserts a key and a value into the hash table. Returns null if key isn't already in the hash table; returns the previous value associated with key if key is already in the hash table.
+	11	void rehash( )Increases the size of the hash table and rehashes all of its keys.
+	12	Object remove(Object key)Removes key and its value. Returns the value associated with key. If key is not in the hash table, a null object is returned.
+	13	int size( )Returns the number of entries in the hash table.
+	14	String toString( )Returns the string equivalent of a hash table.
