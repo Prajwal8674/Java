@@ -1,0 +1,29 @@
+Abstract:- We konw that a class is a model for creating the objects. A class contains description of properties or variables and actions or
+		 methods of its objects.If an object has the properties and actions as mentioned in the class, then that object belongs to the class.
+		 The rule is that any thing is written in the class is applicable to all of its objects. If a method is wrritten in the class, it is available 
+		 as it is to all of the class objects.
+		 For example, take a class Myclass that contains method calculate () that calculates square value of a given number. If we create three object
+		 to this class, alLthe three objects get the copy of this method and hence, from any object, we can call and use this method.
+		 
+Abstraction:-Abstraction is a process of hiding the implementation details and showing only functionality to the user.Another way, it shows only important
+        things to the user and hides the internal details for example sending sms, you just type the text and send the message. You don't know the internal
+		processing about the message delivery.Abstraction lets you focus on what the object does instead of how it does it.
+
+Ways to achieve Abstaction:-There are two ways to achieve abstraction in java
+
+Abstract class (0 to 100%)
+Interface (100%)
+		 
+Abstract class:-A class that is declared with abstract keyword, is known as abstract class in java. It can have abstract and non-abstract methods
+		 (method with body).A class that is declared as abstract is known as abstract class. It needs to be extended and its method implemented.
+		 It cannot be instantiated.	 An abstract class IS a class that generally contains some abstract methods. Both the abstract class and the abstract
+		 methods should be declared by using that word 'abstract'.
+		 abstract class A{} 
+
+Abstract method:-A method that is declared as abstract and does not have implementation is known as abstract method.An abstract method does not contain any body.
+         It contain only header od method.It is an incomplete method.
+		 abstract void printStatus();
+		 
+Understanding the real scenario of abstract class:-In this example, Shape is the abstract class, its implementation is provided by the Rectangle and Circle classes.
+		Mostly, we don't know about the implementation class (i.e. hidden to the end user) and object of the implementation class is provided by the factory method.
+		A factory method is the method that returns the instance of the class. We will learn about the factory method later.
