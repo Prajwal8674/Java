@@ -1,0 +1,32 @@
+Inheritance:-It is possible to acquire all the members of a class and use them in another class by relating the
+objects of the two classes. This is possible by using inheritance concept. When a class is written
+by a programmer and another programmer wants the same features (members) in his class also,
+then the other programmer will go for inheritance. This is done by deriving the new class from the
+existing class. This chapter deals with how to. derive new classes from existirig classes and the
+advantage of inheritance.
+Using inheritance, you can create a general class that defines traits common to a set of related items.
+This class can then be inherited by other, more specific classes, each adding those things that are unique to it.
+In the terminology of Java, a class that is inherited is called a superclass. The class that does the inheriting 
+is called a subclass. Therefore, a subclass is a specialized version of a superclass. It inherits all of the
+instance variables and methods defined by the superclass and adds its own, unique elements.
+Inheritance in java is a mechanism in which one object acquires all the properties and behaviors of parent object.
+The idea behind inheritance in java is that you can create new classes that are built upon existing classes.
+ When you inherit from an existing class, you can reuse methods and fields of parent class, and you can add new methods and fields also.
+Inheritance represents the IS-A relationship, also known as parent-child relationship.
+
+Why use inheritance in java
+
+For Method Overriding (so runtime polymorphism can be achieved).
+For Code Reusability.
+
+Syntax of Java Inheritance:-
+class Subclass-name extends Superclass-name  
+{  
+   //methods and fields  
+}  
+
+Member Access and Inheritance:-Although a subclass includes all of the members of its superclass, it cannot access those
+		members of the superclass that have been declared as private. For example, consider the following simple class hierarchy:
+		
+		
+
