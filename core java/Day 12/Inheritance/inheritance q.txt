@@ -1,0 +1,30 @@
+Q) Why multiple inheritance is not supported in java?
+
+To reduce the complexity and simplify the language, multiple inheritance is not supported in java.
+Consider a scenario where A, B and C are three classes. The C class inherits A and B classes. If A and B classes have same method and you call it from 
+child class object, there will be ambiguity to call method of A or B class.
+
+What is inheritance?
+Deriving new classes from existing classes such that the new classes acquire all the features of
+existing classes is called inheritance.
+
+What is the advantage of inheritance?
+In inheritance, a programmer reuses the super class code without rewriting it, in creation of sub
+classes. So, developing the classes becomes vel}' easy. Hence, the programmer's protiuctivity is
+increased.
+
+Can we override static method?
+
+No, static method cannot be overridden. It can be proved by runtime polymorphism, so we will learn it later.
+
+Why we cannot override static method?
+
+because static method is bound with class whereas instance method is bound with object. Static belongs to class area and instance belongs to heap area.
+
+Can we override java main method?
+
+No, because main is a static method.
+
+Difference between method Overloading and Method Overriding in java
+
+Click me for difference between method overloading and overriding
