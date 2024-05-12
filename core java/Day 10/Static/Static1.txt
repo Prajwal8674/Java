@@ -1,0 +1,14 @@
+2. Static method :-static method is a method that does not act upon instance variables of a class.A static method is
+declared by using the keyword 'static. Static methods are ca1led using Classname.methodname().
+the reason why.static methods can not act on instance variables is that the JVM first execute the
+static methods and then only create the objects. Since the objects are not available at the time of
+calling the static methods, the instance variables are also not available.If you apply static keyword with any method,
+it is known as static method.
+
+1. A static method belongs to the class rather than object of a class.
+2. A static method can be invoked without the need for creating an instance of a class.
+3. static method can access static data member and can change the value of it.
+
+
+3. Static block:-A static block is a block of statements declared as 'static', JVM executes a static block on a highest( priority basis. This means JVM first goes to static block
+and before it looks for the main () method in the program
