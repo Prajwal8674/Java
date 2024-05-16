@@ -1,0 +1,58 @@
+﻿Understanding static:-There will be times when you will want to define a class member that will be used independently of any
+		object of that class. Normally, a class member must be accessed only in conjunction with an object of its class. However,
+		it is possible to create a member that can be used by itself, without reference to a specific instance. To create such a member,
+		precede its declaration with the keyword static. When a member is declared static, it can be accessed before any objects of its class
+		are created, and without reference to any object. You can declare both methods and variables to be static. The most common example
+		of a static member is main( ). main( ) is declared as static because it must be called before any objects exist.Instance variables
+		declared as static are, essentially, global variables. When objects of its class are declared, no copy of a static variable is made.
+		Instead, all instances of the class share the same static variable.
+		
+		Instance variables declared as static are, essentially, global variables. When objects of:-its class are declared, no copy of a static
+		variable is made. Instead, all instances of the class
+	share the same static variable.
+	Methods declared as static have several restrictions:
+	• They can only call other static methods.
+	• They must only access static data.
+	• They cannot refer to this or super in any way. (The keyword super relates to
+	inheritance and is described in the next chapter.)
+
+static keyword:-The static keyword in java is used for memory management mainly. We can apply java static keyword with variables, methods,
+				blocks and nested class. The static keyword belongs to the class than instance of the class.
+				
+		
+		The static can be:
+1.variable (also known as class variable)
+2.method (also known as class method)
+3.block
+4.nested class
+
+1) Java static variable:-If you declare any variable as static, it is known static variable.The static variable can be used to refer the 
+		common property of all objects (that is not unique for each object) e.g. company name of employees,college name of students etc.
+		The static variable gets memory only once in class area at the time of class loading.
+		
+		Advantage of static variable:-It makes your program memory efficient (i.e it saves memory).
+		
+	 Example:-class Student{  
+     int rollno;  
+     String name;  
+     static String college="ITS";  
+} 
+
+
+//As soon as the UseStatic class is loaded, all of the static statements are run. First, a is set to 3,
+then the static block executes, which prints a message and then initializes b to a * 4 or 12. Then
+main( ) is called, which calls meth( ), passing 42 to x. The three println( ) statements refer to the
+two static variables a and b, as well as to the local variable x.
+Here is the output of the program:
+Static block initialized.
+x = 42
+a = 3
+b = 12//
+
+**Program of counter without static variable:-In this example, we have created an instance variable named count which is incremented
+		in the constructor. Since instance variable gets the memory at the time of object creation, each object will have the copy of
+		the instance variable, if it is incremented, it won't reflect to other objects. So each objects will have the value 1 in the count variable.
+		
+**Program of counter by static variable:-As we have mentioned above, static variable will get the memory only once, if any object changes the value
+		of the static variable, it will retain its value.
+ 
