@@ -1,0 +1,14 @@
+String Questons
+
+What is object reference? 
+Ans:- Object reference is a unique hexadecimal number representing the memory address of the object.
+ 
+What is difference between == and equals() while comparing strings?
+Ans:- == operator is compares the references of the string object.it does not compare the content of 
+		 objects.equals()method compare the content.
+		 
+what is string constant pool?
+Ans:-String constant pool is a separate block of memory where string object are held by JVM. if a string
+	 object are create directly,using assignment operator as String s = "Hello" then it is store in string 
+	 constant pool.  
+ 
