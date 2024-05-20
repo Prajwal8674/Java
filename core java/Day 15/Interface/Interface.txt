@@ -1,0 +1,37 @@
+In the last chapter, we learned that an abstract class is a class which contains some abstract methods as well as concrete methods also.
+Imagine there is a class that contains only abstract methods and there are no concrete methods. It becomes an interface.This means an interface
+contains methods which are all abstract and hence none of the methods will have body. Only method prototypes will be written in the interface,
+So an interface can be defined as a specification of method prototypes. Since, we write only abstract methods in the interface, there is possibility for
+providing different implementations (body) for those abstract methods depending on the requirements of objects.
+
+An interface in java is a blueprint of a class. It has static constants and abstract methods only.
+The interface in java is a mechanism to achieve fully abstraction. There can be only abstract methods in the java interface not method body.
+It is used to achieve fully abstraction and multiple inheritance in Java.Java Interface also represents IS-A relationship.
+
+An interface contains only abstract methods which are all incomplete methods. So it is not possible to create an object to an interface. 
+In this case, we can create separate classes where we can implement all the methods of the interface. These classes are called implementation classes.
+Since,implementation classes will have all the methods with body, it is possible to create objects to the implementation classes. The flexibility lies
+in the fact that every implementation class can have its own implementation ofthe abstract methods of the interface.
+
+Why use Java interface?:-There are mainly three reasons to use interface. They are given below.
+
+1.It is used to achieve fully abstraction.
+2.By interface, we can support the functionality of multiple inheritance.
+3.It can be used to achieve loose coupling.
+
+Nested Interface
+interface printable{  
+ void print();  
+ interface MessagePrintable{  
+   void msg();  
+ }  
+}  
+
+Difference between abstract class and interface:-
+             Abstract class									Interface
+1) Abstract class can have abstract and non-abstract methods.	                Interface can have only abstract methods.
+2) Abstract class doesn't support multiple inheritance.	                        Interface supports multiple inheritance.
+3) Abstract class can have final, non-final, static and non-static variables.	Interface has only static and final variables.
+4) Abstract class can have static methods, main method and constructor.	        Interface can't have static methods, main method or constructor.
+5) Abstract class can provide the implementation of interface.	                Interface can't provide the implementation of abstract class.
+6) The abstract keyword is used to declare abstract class.	                    The interface keyword is used to declare interface.
