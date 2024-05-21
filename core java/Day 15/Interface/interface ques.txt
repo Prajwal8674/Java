@@ -1,0 +1,17 @@
+What is an interface?
+An interface is a specification of method prototypes. All the methods of the interface are pUblic and
+abstraCt.
+
+Why the methods of interface are public and abstract by default?
+Interface methods are public since they shoald be available to third party vendors to provide
+implementation. They are abstract becau.se their implementation is left for third party vendors.
+
+Q) Multiple inheritance is not supported through class in java but it is possible by interface, why?
+
+As we have explained in the inheritance chapter, multiple inheritance is not supported in case of class.
+But it is supported in case of interface because there is no ambiguity as implementation is provided by the implementation class. 
+
+Q) What is marker or tagged interface?
+
+An interface that have no member is known as marker or tagged interface. For example: Serializable, Cloneable, Remote etc. 
+They are used to provide some essential information to the JVM so that JVM may perform some useful operation.
