@@ -1,0 +1,71 @@
+String ;- Most of data that transmits on internet will be in the form of group of characters, 
+		  such group of character is called as string.
+		  In c/c++ language, a string is represented an array of character, where the last character
+		  will be '\0'(called null character).this last character is represented the end of the string.
+		  But this is not valid in java , a string is an object of String class.
+		  
+		  An array of characters works same as java string. For example:
+		  String s = "Java"
+		  char[] ch={'J','a','v','a'};  
+
+What is String :- string is a sequence of character .But in java,string is an object that represents a 
+				  sequence of character. String class is used to create string object.
+
+How to create String object :- There are three way to create string in Java
+
+1. By string Literal.
+2. By new keyword.
+3. By converting the character array into string.
+
+1. By create String literal :- Java String literal is created by using double quotes. 
+	For Example:- String s = "Hello";
+	
+	In this case JVM create an object and store "Hello" in that object. this object is referenced by the variable 's'.
+	create object means allotting memory for storing data.
+	Each time you create a string literal, the JVM checks the string constant pool first.If the string is exist in the pool,
+	a reference to the pooled instance is returned. If string doesn't exist in the pool, a new string instance is created 
+	and placed in the pool. For example:
+	
+	String s1="Hello";  
+	String s2="Hello";//will not create new instance  
+	
+2.  By new keyword:- We can create an object to String class by allocating memory using new operator.This is just like creating
+	object to any class.
+	For Example:- String s = new String("Hello");
+	Here we are doing two things.First we are creating object using new operator.Then we are storing the string "Hello" into object.
+	
+3. By converting the character array into string :- the third way of creating string is by converting character array into strings.
+	For Example:- char[] ch={'J','a','v','a'};  	
+					String s = new String(ch);
+	
+	
+Substring:- A part of a String is called substring.In other words,substring is a subset of another string.In case of substring
+            startIndex is inclusive and endIndex is exclusive.
+			
+			String s="hello";  
+            System.out.println(s.substring(0,2));//he
+
+			String s="Sachin Tendulkar";  
+            System.out.println(s.substring(6));//Tendulkar  
+            System.out.println(s.substring(0,6));//Sachin 
+			
+		1.UpperCase() and toLowerCase() method:-The java string toUpperCase() method converts this string into uppercase letter and string
+												toLowerCase() method into lowercase letter.	
+			String s="Sachin";  
+			System.out.println(s.toUpperCase());//SACHIN  
+			System.out.println(s.toLowerCase());//sachin  
+				 
+		2. trim() method:-The string trim() method eliminates white spaces before and after string.
+			String s="  Sachin  ";  
+			System.out.println(s);//  Sachin    
+			System.out.println(s.trim());//Sachin
+			
+		3. replace() method:-The string replace() method replaces all occurrence of first sequence of character with second sequence of character.
+			String s1="Java is a programming language. Java is a platform. Java is an Island.";    
+            String replaceString=s1.replace("Java","Kava");//replaces all occurrences of "Java" to "Kava"    
+           System.out.println(replaceString);
+		  
+		4. charAt() method:-The string charAt() method returns a character at specified index.
+			String s="Sachin";  
+			System.out.println(s.charAt(0));//S  
+			System.out.println(s.charAt(3));//h
