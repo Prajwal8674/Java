@@ -1,0 +1,27 @@
+1	char charAt(int index):-returns char value for the particular index
+
+2.	String compareTo
+
+The java string compareTo() method compares the given string with current string lexicographically. It returns positive number, negative number or 0.
+If first string is greater than second string, it returns positive number (difference of character value).
+If first string is less than second string, it returns negative number and if first string is equal to second string, it returns 0.
+For Example:-s1 > s2 => positive number  
+	     s1 < s2 => negative number  
+             s1 == s2 => 0  
+
+3.		String concat :-The java string concat() method combines specified string at the end of this string.
+		It returns combined string. It is like appending another string.
+
+4.      String contains:-The java string contains() method searches the sequence of characters in this string.
+    	It returns true if sequence of char values are found in this string otherwise returns false.
+
+5.      String equals:-The java string equals() method compares the two given strings based on the content of the string.
+        If any character is not matched, it returns false. If all characters are matched, it returns true.
+		
+6.	 	String trim:-The java string trim() method eliminates leading and trailing spaces. The unicode value of space character is '\u0020'.
+		The trim() method in java string checks this unicode value before and after the string, if it exists then removes the
+		spaces and returns the omitted string.
+		
+7.  	String split:-The java string split() method splits this string against given regular expression and returns a char array.
+
+8. 		String getBytes():-The java string getBytes() method returns the byte array of the string. In other words, it returns sequence of bytes.
