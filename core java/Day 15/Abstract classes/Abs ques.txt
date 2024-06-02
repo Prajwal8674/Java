@@ -1,0 +1,6 @@
+What is abstract method?
+An abstract method is a method without method body. An abstract method is written when the same
+method has to perform different tasks depending on the object calling it.
+
+What is abstract class?
+An abstract class is a class that contains 0 or more abstract methods.
