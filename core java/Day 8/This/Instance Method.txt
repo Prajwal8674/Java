@@ -1,0 +1,9 @@
+Instance Method:-Instance method are the method which act upon the instance variable.To call the instance
+object is needed, since the instance variables are contained in the object. We call the instance methods
+by using object objectname.methodname(). The specialty of instance methods is that they 
+can access not only instance variables but also static variables directly.
+There are two types of instance methods:-
+1. Asseccor Methods.
+2. Mutator Method.
+Accessor methods are the methods that simply access or read the instance variables.They do not modify
+the instance variables. Mutator methods not only access the instance variables but also modify them.
