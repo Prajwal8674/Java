@@ -1,0 +1,13 @@
+instanceof:-The java instanceof operator is used to test whether the object is an instance of the specified type (class or subclass or interface).
+The instanceof in java is also known as type comparison operator because it compares the instance with type. It returns either true or false.
+If we apply the instanceof operator with any variable that has null value, it returns false.
+
+An object of subclass type is also a type of parent class. For example, if Dog extends Animal then object of Dog can be referred by either Dog or Animal class.
+
+When Subclass type refers to the object of Parent class, it is known as downcasting. If we perform it directly, compiler gives Compilation error.
+If you perform it by typecasting, ClassCastException is thrown at runtime. But if we use instanceof operator, downcasting is possible.
+
+Dog d=new Animal();//Compilation error 
+
+Dog d=(Dog)new Animal();  
+//Compiles successfully but ClassCastException is thrown at runtime
