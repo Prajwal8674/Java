@@ -1,0 +1,61 @@
+Array :- Array is a collection of similar type of element that's have a contiguous memory location. 
+		 Array is an object the contains element of similar data type We can store only fixed set of
+		 element in a java array.Array in java is index based.first element of the array is store at 
+		 0 index.Each item in an array is called an element,and each element is accessed by its numerical
+		 index.
+			
+		Instead of declaring individual variables, such as number0, number1, ..., and number99,you declare
+		one array variable such as numbers and use numbers[0], numbers[1], and ..., numbers[99] to represent
+		individual variables.
+		
+limitation of Array :- 1. fixed in size
+		       2. Homogeneous
+		       3. But we can resolve this problem using object Arrays.
+
+Types of Array :- Array are generally categorized into two parts as describe here's
+				  Single dimensional Array(1D Array).
+				  Multidimensional Array(2D,3D,.... arrays).
+				  
+		1. Single dimensional Array :- A single dimensional array or 1D array is represents  a row or a column of element.	
+	for example,the marks is obtained by a student in 5 different subject can be represent 
+									by 1D array
+									
+		Syntax to Declare an Array in java:- dataType[] arrname; (or)  
+						     dataType []arrname; (or)  
+                                                     dataType arrname[];  
+											 
+Example :- 	int a[]=new int[5];//declaration and instantiation  
+			a[0]=10;//initialization  
+			a[1]=20;  
+			a[2]=70;  
+			a[3]=40;  
+			a[4]=50;
+
+
+			int a[]={33,3,4,5};//declaration, instantiation and initialization  
+
+Multidimensional Array(2D,3D,.... arrays) :- multi dimensional array represent 2D,3D  array  which are combination of several
+											 earlier type of array. for example, a 2D array is a combination of two or more 1D
+											 arrays. exactly for this 3D array.
+											 
+Systex :- int[][] arr=new int[3][3];
+
+Example :- int[][] arr=new int[3][3];//3 row and 3 column  
+			
+	       arr[0][0]=1;  
+		   arr[0][1]=2;  
+		   arr[0][2]=3;  
+		   arr[1][0]=4;  
+           arr[1][1]=5;  
+		   arr[1][2]=6;  
+		   arr[2][0]=7;  
+           arr[2][1]=8;  
+		   arr[2][2]=9; 
+		   
+		   int arr[][]={{1,2,3},{2,4,5},{4,4,5}};  
+		   
+		   
+Arrayname.length :- If we want to know the sizeof an any array, we can use the property of 'length'  of an any array.
+					arrayname.lenght return an integer number whihc is represent the size of an array.
+
+			
