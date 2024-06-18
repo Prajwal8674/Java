@@ -1,0 +1,7 @@
+Legacy(Before JDK-1.2) Classes
+1.Vector
+2.Stack
+3.Hashtable
+4.Dictionary
+5.Properties
+6.Enumeration(Interface)
