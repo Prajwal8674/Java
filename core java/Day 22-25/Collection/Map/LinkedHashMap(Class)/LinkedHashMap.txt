@@ -1,0 +1,37 @@
+LinkedHashMap:-This class extends HashMap and maintains a linked list of the entries in the map, in the order in which they were inserted.
+		This allows insertion-order iteration over the map. That is, when iterating a LinkedHashMap, the elements will be returned in the order in which 
+		they were inserted.
+		A LinkedHashMap contains values based on the key. It implements the Map interface and extends HashMap class.
+		It contains only unique elements.
+		It may have one null key and multiple null values.
+		It is same as HashMap instead maintains insertion order.
+        You can also create a LinkedHashMap that returns its elements in the order in which they were last accessed.
+        
+		1. The WeakHashMap class supports five constructors. The first form constructs a default LinkedHashMap:
+
+		LinkedHashMap( )
+
+		2. The second form initializes the LinkedHashMap with the elements from m:
+
+		LinkedHashMap(Map m)
+
+		3. The third form initializes the capacity:
+
+		LinkedHashMap(int capacity)
+
+		4. The fourth form initializes both capacity and fill ratio. The meaning of capacity and fill ratio are the same as for HashMap:
+
+		LinkedHashMap(int capacity, float fillRatio)
+
+		5. The last form allows you to specify whether the elements will be stored in the linked list by insertion order, or by order of last access. If Order is true, then access order is used. If Order is false, then insertion order is used.
+
+
+		LinkedHashMap(int capacity, float fillRatio, boolean Order)
+
+		Apart from the methods inherited from its parent classes, LinkedHashMap defines following methods:
+
+
+		1	void clear() Removes all mappings from this map.
+		2	boolean containsKey(Object key) Returns true if this map maps one or more keys to the specified value.
+		3	Object get(Object key) Returns the value to which this map maps the specified key.
+		4	protected boolean removeEldestEntry(Map.Entry eldest) Returns true if this map should remove its eldest entry.
