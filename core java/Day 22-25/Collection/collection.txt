@@ -1,0 +1,56 @@
+Colletion:- A group of individual object as a Single entity is called collection.
+
+Colletion Framework:-It define Several classes and interface,which can be used to represent a group of object as a single entity.
+
+Terminology:-
+		java						C++
+	Colletion				 Container
+	Colletion Framework		 STL(standrad Templet library)
+	
+9-key interface of colletion framework:-
+
+  1. Collection(Interface):-
+		1. If we want to represent a group of individual object as a single entity then we should go for colletion.
+		2. In general colletion interface is consider as root interface of colletion framework.
+		3. colletion interface define the most comman metohds which can be applicable for any collection object.
+		3.Collection is an Interface can be used to represent a group of individual object as a single entity where as 
+		4.collections an utility class present in java.util package to define several utility method for collection.
+		
+  2. List(Interface):-
+		1. It is the child interface of collection.
+		2. If we want to represent a group of individual object where insertion odrer is preserved and duplication allowed.Then we should go for list.
+		3. Vector and stack classes are engineereed in 1.2 version to into collection framework.
+		
+  3. Set(Interface):-
+		1. It is the child interface of collection.
+		2. If we want to represent a group of individual object where duplication not allowed and insertion odrer is not preserved.Then we should go for set.
+		
+  4. SortedSet(Interface):-
+		1. It is the child interface of collection.
+		2. If we want to represent a group of individual object according to some sorting order.then we should go for SortedSet.
+  
+  5. NegvigableSet(Inteface):- 
+		1.  It is the child interface of SortedSet.to provide Several method for Negvigable purpose.
+		2. It is introduce in version 1.6.
+		
+  6. Queue(Inreface):- 
+		1.It is the child interface of collection.
+		2. If we want to represent a group of individual object prior to processing ,then we should we go for queue.
+		
+	Note:- 1. All the above interface(collection,list,set,SortedSet,NegvigableSet,Queue) means for represent group individual object.
+		   2. If we want to represent a group of object as key-value pairs then we should go for Map.
+		   
+  7. Map(Interface):- 
+		   1. If we want to represent a group of object as a key-value pairs then we should we go for Map.
+		   2. Both key and value are object.
+		   3. duplication are not allowed But value can be duplicate.
+		   4. HashMap is not child interface of collection.
+		   
+  8. SortedMap(Interface):-
+           1. If we want to represent a group of object as a key-value pairs.according to some sorting order then we should we go for SortedMap.
+		   2. Sorting should be done only based on keys but not based on values.
+		   3. SortedMap is child interface if Map.
+		   
+  9. NegvigableMap(Inteface):- 
+	       1. It is child interface of SortedMap and define Several method for Negvigable purpose.
+		   
