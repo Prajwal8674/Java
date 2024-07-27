@@ -1,0 +1,85 @@
+Collection Framework:-
+1. Collection(Interface):-
+	1. If  we want to response a group of individual object as a single entity then we should go for collection.
+	2. Collection interface defnes the most comman method which can be applied for any collection object.
+	3. The following is the list of method present in collection method.
+		1. boolean add(Object o);  :- is used to insert an element in this collection.
+		2. boolean addAll(Collection c);  :-is used to insert the specified collection elements in the invoking collection.
+		3. boolean remove(Object o);  :-is used to delete an element from this collection.
+		4. boolean removeAll(Collection c);  :-is used to delete all the elements of specified collection from the invoking collection.
+		5. boolean retainAll(Collection c);  :-is used to delete all the elements of invoking collection except the specified collection.
+		6. void clear();  :-removes the total no of element from the collection.
+		7. boolean isEmpty();  :-checks if collection is empty.
+		8. int size();  :-return the total number of elements in the collection.
+		9. boolean contains(Object o); :-is used to search an element.
+		10. boolean containsAll(Collection c); :-is used to search the specified collection in this collection.
+		11. Object[] toArray();  :-converts collection into array.
+		12. Iterator iterator();:-returns an iterator.
+		13. boolean equals(Object element) :-matches two collection
+		14. int hashCode():- returns the hashcode number for collection.
+		
+		Iterator interface:-Iterator interface provides the facility of iterating the elements in forward direction only.
+			Methods of Iterator interface:-There are only three methods in the Iterator interface. They are:
+
+			1. public boolean hasNext() it returns true if iterator has more elements.
+			2. public object next() it returns the element and moves the cursor pointer to the next element.
+			3. public void remove() it removes the last elements returned by the iterator. It is rarely used.
+		
+2. List(Interface):-
+		1. List is child interface of collection.
+		2. If we want to represent to group of object where duplicate object are allowed and insertion order is preserved .then we shouldgo for List.
+		3. Insertion orderwill be preserved by means of index.
+		4. We can diffrenciate duplicate object by using Index.Hance place very important role in index.
+		5. Java ArrayList class uses a dynamic array for storing the elements.It extends AbstractList class and implements List interface.
+		6. Java ArrayList class is non synchronized.
+		7. Java ArrayList allows random access because array works at the index basis.
+		8. In Java ArrayList class, manipulation is slow because a lot of shifting needs to be occurred if any element is removed from the array list.
+		9. List interface definr following method.
+			1. boolean add(int index,object o);
+			2. boolean addAll(int index,collection c);
+			3. object remove(int index);
+			4. object get(int index);
+			5. object set(int index,object new);
+			6. int indexOf(object o);
+			7. int lastIndexOf(object o);
+			8. listIterator listIterator();
+			
+		It contains classes:-
+		    1. ArrayList
+			2. LinkedList
+			3. Vector
+			4. Stack
+			
+	1. ArrayList():-
+		The underlaying datastructor for ArrayList is resizeable array or gorwalbe array.
+		Insertion oerder preserved.
+		Duplicate object are allowed.
+		Hetrogeneous object are allowed.
+		null insertion is possible.
+		
+		Construction :-
+		1. ArrayList Al = new ArrayList();
+			. Create an empty ArrayList object with default initial capacity is 10.
+			. Once ArrayList reaches its max.capacity then a new Al object will create with 
+			new capacity = CurrentCapacity *3/2+1
+	
+		2. ArrayList Al = new AbstractList(int intialCapacity);
+			 . create an empty ArrayList object with the specified initial capacity.
+		
+		3. AbstractList l = new AbstractList(Collection c);
+			 . Create an equivalent AbstractList object for the given Collection object i.e This Constructor is for Diffrence between collection object.
+
+	Java Non-generic Vs Generic Collection:-Java collection framework was non-generic before JDK 1.5. Since 1.5, it is generic.
+		Java new generic collection allows you to have only one type of object in collection. Now it is type safe so typecasting is not required at run time.
+		
+		Let's see the old non-generic example of creating java collection.
+		ArrayList al=new ArrayList();//creating old non-generic arraylist
+		
+		Let's see the new generic example of creating java collection.
+		ArrayList<String> al=new ArrayList<String>();//creating new generic arraylist  
+		
+		In generic collection, we specify the type in angular braces. Now ArrayList is forced to have only specified type of objects in it. If you try to add
+			another type of object, it gives compile time error.
+			
+
+		
