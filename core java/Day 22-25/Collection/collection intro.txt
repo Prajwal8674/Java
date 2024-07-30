@@ -1,0 +1,43 @@
+
+An Array is an index collection of fixed no & homogeneous data element.
+
+limitatons of object array:-
+
+ 1. Array are fixed in size i.e once we are created an array these is no change of increment or decreasing size based on our requirement hance to uses array 
+		concept compulsary we should know the size in advance, which may not be possible.
+		
+ 2. Array can hold only homogeneousdata element i.e ( same type).
+	
+	Example:- Student[] s = new Student[1000];
+			  Student[0] =  new Student[];
+			  Student[1] =  new Student[];
+			  Student[2] =  new Custmer[];// incompatible type found custmer required Student
+
+			But we can resolve this problem by using onject type of array
+			Object[] a = new Object[1000];
+			a[0] = new Student[];
+			a[1] = new Student[];
+			
+ 3. Array concept not built on some datastructure,Hance readymade method are not available for every requirement compulsary programmer is responsible to write the logic.
+		to resolve this problem intorduce collection concept.
+
+	Advantages of colletion over arrays:-
+		1. Collection are growable in nature Hace based on our requirement we can increase or decrease the size.
+		2. Collection can hold homogeneous and hetrogeneous.
+		3. Every collection class is implement based on some datastructure Hance radymade method support is available for every requirement.
+		
+	Disadvantages of collection;-
+	 1. performance point of view collection are not recommended to use.
+	 
+	Diffrence between Array and colletion 
+	
+			Array 																Colletion
+			
+	1. Array are fixed in size. 								    				1. collection are gorwable in nature.
+	2. Memory pont of view array concept is not recommended to use. 				2. Memory pont of view colletion concept is recommended to use.
+	3. Performance pont of view array concept highly recommended to use.			3. Performance pont of view colletion concept is not recommended to use.
+	4. Array can hold only homogeneous data element.								4. Collection can hold only homogeneous and hetrogeneous object.
+	5. There is no underlaying d.s for array Hance radymade method is not available.5. underlaying d.s is available for every collection class.Hance radymade method is available.
+	6. Array can be used to premitive And object.									6. collection can hold only object bot not for primitive.
+	
+	
